@@ -41,7 +41,7 @@ if (a === 8 || b === 8 || a + b === 8 || a - b === 8 || b - c === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-const totalShoppingCart = 49.99;
+let totalShoppingCart = 49.99;
 let shipping = 10;
 
 if (totalShoppingCart > 50) {
@@ -56,7 +56,16 @@ console.log(total);
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart2 = 100;
+let discountedTotal = totalShoppingCart2 * 0.8;
+
+let shippingCost2 = 10;
+if (discountedTotal > 50) {
+  shippingCost2 = 0;
+}
+
+let finalBlackFridayTotal = discountedTotal + shippingCost2;
+console.log(finalBlackFridayTotal);
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -64,7 +73,38 @@ console.log(total);
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let c = 15;
+let d = 4;
+let e = 20;
+
+let result;
+
+// caso 1: c è il più grande
+if (c > d && c > e) {
+  if (d > e) {
+    result = [c, d, e];
+  } else {
+    result = [c, e, d];
+  }
+
+  // caso 2: d è il più grande
+} else if (d > c && d > e) {
+  if (c > e) {
+    result = [d, c, e];
+  } else {
+    result = [d, e, c];
+  }
+
+  // caso 3: e è il più grande
+} else {
+  if (c > d) {
+    result = [e, c, d];
+  } else {
+    result = [e, d, c];
+  }
+}
+
+console.log(result);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
