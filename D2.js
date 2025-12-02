@@ -8,24 +8,32 @@ if (x > y) {
 } else if (y > x) {
   console.log("il numero più grande è: " + y);
 }
-
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (y !== 5) {
+  console.log("not equal");
+} else if (y === 5) {
+  console.log("equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (x % 5 === 0) {
+  console.log("divisibile per 5");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const a = 7;
+const b = 1;
+if (a === 8 || b === 8 || a + b === 8 || a - b === 8 || b - c === 8) {
+  console.log("it's 8");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -33,7 +41,15 @@ if (x > y) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const totalShoppingCart = 49.99;
+let shipping = 10;
+
+if (totalShoppingCart > 50) {
+  shipping = 0;
+}
+
+let total = totalShoppingCart + shipping;
+console.log(total);
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
